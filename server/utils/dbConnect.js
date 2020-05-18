@@ -7,7 +7,7 @@ module.exports = (app) => {
     ssl: { rejectUnauthorized: false },
   })
     .then((db) => {
-      app.set('db', db)
+      app.set('db', db.fitness_dev)
     })
     .catch((err) => console.log(err))
 }

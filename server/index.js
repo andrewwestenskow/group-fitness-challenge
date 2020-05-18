@@ -10,4 +10,6 @@ applyMiddleware(app)
 
 dbConnect(app)
 
+app.get('/', (req, res) => res.send('Hello'))
+
 app.listen(SERVER_PORT, () => console.log(`Getting fit on port ${SERVER_PORT}`))
